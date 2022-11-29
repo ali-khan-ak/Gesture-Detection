@@ -504,16 +504,16 @@ def draw_info_text(image, brect, handedness, hand_sign_text,
     if hand_sign_text != "":
         info_text = info_text + ':' + hand_sign_text
         # myobj = gTTS(text="How are You", lang='en', slow=False)
-        if hand_sign_text == "OK":
-            os.system("start gesture_voice.mp3")
-        if hand_sign_text == "Hello":
-            os.system("start gesture_voices_hello.mp3")
-        if hand_sign_text == "Thank You":
-            os.system("start gesture_voices_thanks.mp3")
-        if hand_sign_text == "Yes":
-            os.system("start gesture_voices_yes.mp3")
-        if hand_sign_text == "How are you?":
-            os.system("start gesture_voices_How.mp3")
+        # if hand_sign_text == "OK":
+        #     os.system("start gesture_voice.mp3")
+        # if hand_sign_text == "Hello":
+        #     os.system("start gesture_voices_hello.mp3")
+        # if hand_sign_text == "Thank You":
+        #     os.system("start gesture_voices_thanks.mp3")
+        # if hand_sign_text == "Yes":
+        #     os.system("start gesture_voices_yes.mp3")
+        # if hand_sign_text == "How are you?":
+        #     os.system("start gesture_voices_How.mp3")
         
         print(hand_sign_text)
     cv.putText(image, info_text, (brect[0] + 5, brect[1] - 4),
